@@ -3,10 +3,10 @@ const Expense = require("../models/expense.model");
 
 exports.create = async (req, res) => {
   try {
-    if (!req.body.title || !req.body.note) {
+    /* if (!req.body.expenseTitle || !req.body.value) {
       res.status(400).send({ message: "Title and Content can not be empty!" });
       return;
-    }
+    } */
     const expense = new Expense(req.body);
     const newExpense = await expense.save();
     res.status(201).send(newExpense);

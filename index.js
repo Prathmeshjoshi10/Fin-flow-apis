@@ -19,6 +19,7 @@ app.use(express.urlencoded({ extended: true }));
 
 require("./app/routes/user.routes")(app);
 require("./app/routes/expense.routes")(app);
+require("./app/routes/income.routes")(app);
 
 const db = require("./app/models");
 

@@ -18,33 +18,9 @@ const userSchema = new mongoose.Schema(
         }
       },
     },
-
-    firstname: {
-      type: String,
-      required: true,
-      trim: true,
-    },
-    lastname: {
-      type: String,
-      required: true,
-      trim: true,
-    },
-
     password: {
       type: String,
-      required: true,
-      trim: true,
-      minlength: 8,
-    },
-    conpassword: {
-      type: String,
-      required: true,
-      trim: true,
-      minlength: 8,
-    },
-    mobile: {
-      type: Number,
-      required: true,
+      required: true
     },
     tokens: [
       {

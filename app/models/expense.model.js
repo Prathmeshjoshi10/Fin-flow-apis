@@ -3,12 +3,12 @@ const mongoose = require("mongoose");
 
 const expenseSchema = new mongoose.Schema(
   {
-    title: {
+    expenseTitle: {
       type: String,
       required: true,
       trim: true,
     },
-    value: {
+    expenseValue: {
       type: Number,
       required: true,
     },
@@ -21,8 +21,9 @@ const expenseSchema = new mongoose.Schema(
     },
     userId: {
       type: String,
-      required: true,
-    },
+      required: true
+    }
+    
   },
   {
     timestamps: true,
